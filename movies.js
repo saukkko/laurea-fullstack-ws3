@@ -60,7 +60,7 @@ html += data.Episodes.map((ep) => {
         <td>${ep.Released}</td>
         <td>${ep.Episode}</td>
         <td>${ep.imdbRating}</td>
-        <td>${ep.imdbID}</td>
+        <td><a href="https://www.imdb.com/title/${ep.imdbID}" rel="noopener noreferrer" target="_blank">${ep.imdbID}</a></td>
       </tr>`;
   return row;
 }).join("");
